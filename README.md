@@ -4,9 +4,8 @@ Skeleton of Modular Monolith in Laravel
 
 - In `app` direcotry are modules
 - Modules have own architecture/organizastion/folder structure eg.
-  - Submodules
+  - Contains submodules
   - DDD Layers Application, Domain, Infrastructure, UI
-- Some global elements like routes, console commands, event listeners are splited into modules
-  To combine them, the concept of Registry was introduced
+- Registry have a role to combine routes, console comands, event listeners
 
 
