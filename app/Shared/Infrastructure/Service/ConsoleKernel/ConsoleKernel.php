@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Console;
+namespace App\Shared\Infrastructure\Service\ConsoleKernel;
 
 use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Foundation\Console\Kernel;
 
-class Kernel extends ConsoleKernel
+class ConsoleKernel extends Kernel
 {
     /**
      * Define the application's command schedule.
@@ -25,8 +25,6 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-        $this->load(__DIR__.'/Commands');
-
-        require base_path('routes/console.php');
+        require app_path('Registry/Console.php');
     }
 }
